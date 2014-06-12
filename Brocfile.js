@@ -128,6 +128,12 @@ var bowerFiles = [
     srcDir: '/',
     destDir: '/handlebars'
   }),
+
+  pickFiles('bower_components/lodash/dist', {
+    files: ['lodash.js'],
+    srcDir: '/',
+    destDir: '/lodash'
+  })
 ];
 
 bowerFiles = mergeTrees(bowerFiles);
@@ -141,7 +147,7 @@ var vendoredPackages = {
   'metamorph':        vendoredPackage('metamorph'),
   'backburner':       vendoredPackage('backburner'),
   'router':           vendoredPackage('router'),
-  'route-recognizer': vendoredPackage('route-recognizer'),
+  'route-recognizer': vendoredPackage('route-recognizer')
 };
 
 var emberHandlebarsCompiler = pickFiles('packages/ember-handlebars-compiler/lib', {
